@@ -1,41 +1,34 @@
-# Compiled Lua sources
-luac.out
+local lc = gameGetService(Players).LocalPlayer 
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+local group = 8856667
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+local grouplink = https://www.roblox.com/groups/8856667/Honk#!/about
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+if lcIsInGroup(group) then 
+      print(FuaiHubPremium)
+else
+      lckick(пашёл нафиг не вайтлистнут) 
+end
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/kav"))()
+local Window = Library.CreateLib("vexusHub", "Serpent")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("North Pole Teleport", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(564,12,-2499)
+end)
+Section:NewToggle("North Pole STeleport", "ToggleInfo", function(state)
+st = state
+while st do task.wait()
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(564,12,-2499)
+end)
+end
+end)
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("1 World")
+Section:NewButton("New Year Event Teleport", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(411,2,-2166)
+end)
+Section:NewButton("Jungle Teleport", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1322,12,500)
+end)
